@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nrubia25-lang.github.io/sitemap.xml
