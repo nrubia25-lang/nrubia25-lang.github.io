@@ -1,5 +1,5 @@
 
-window.GL_CONFIG={checkoutUrl:"https://pay.kiwify.com.br/Bofs5Sp",metaPixelId:"2548234138956309"};
+window.GL_CONFIG={checkoutUrl:"https://pay.kiwify.com.br/HIzqBGT",metaPixelId:"2548234138956309"};
 function trackGL(event,props={}){
   window.dataLayer=window.dataLayer||[];window.dataLayer.push({event,...props});
   if(window.fbq){
