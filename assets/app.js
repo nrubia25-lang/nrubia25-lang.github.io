@@ -20,6 +20,6 @@ function initTracking(){
 function cookieChoice(v){localStorage.setItem('gl_consent',v);document.getElementById('cookie')?.classList.remove('show');if(v==='yes')initTracking();}
 document.addEventListener('DOMContentLoaded',()=>{
  const consent=localStorage.getItem('gl_consent');if(consent==='yes')initTracking();else if(consent!=='no')document.getElementById('cookie')?.classList.add('show');
- document.querySelectorAll('[data-checkout]').forEach(a=>a.addEventListener('click',e=>{trackGL(a.dataset.event||'click_checkout',{location:a.dataset.location||'unknown'});e.preventDefault();setTimeout(()=>location.href=window.GL_CONFIG.checkoutUrl,120);}));
+ document.querySelectorAll('[data-checkout]').forEach(a=>a.addEventListener('click',e=>{trackGL(a.dataset.event||'click_checkout',{location:a.dataset.location||'unknown'});e.preventDefault();setTimeout(()=>location.href=window.GL_CONFIG.checkoutUrl,1000);}));
  document.querySelector('.menu')?.addEventListener('click',()=>document.querySelector('.mobile-panel')?.classList.toggle('open'));
 });
